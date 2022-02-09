@@ -1,0 +1,45 @@
+\ProvidesPackage{talmey}
+
+% packages
+\usepackage[utf8]{inputenc}
+\usepackage[esperanto, french, main = english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{parcolumns}
+\usepackage{lettrine}
+\usepackage{indentfirst}
+\usepackage{ragged2e}
+\usepackage{graphicx}
+\usepackage{anyfontsize}
+\usepackage{soul}
+\usepackage{bigdelim}
+\usepackage[symbol*]{footmisc}
+\usepackage{sectsty}
+\usepackage{tocloft}
+
+% footnote symbols
+\setfnsymbol{wiley}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+% paragraph spacing
+\setlength{\parskip}{0.5em}
+
+% page style
+\pagestyle{plain}
+
+% table of contents heading
+\addto\captionsenglish{\renewcommand*\contentsname{TABLE OF CONTENTS}}
+
+% suppress indentation in table of contents
+\setlength{\cftsecindent}{0pt}
+\setlength{\cftsubsecindent}{0pt}
+
+% adjust spacing in table of contents
+\renewcommand\cftsecafterpnum{\vskip 0.5em}
+\renewcommand\cftsubsecafterpnum{\vskip 0.5em}
+
+% heading style
+\sectionfont{\centering}
+\subsectionfont{\centering}
+
+
+
